@@ -1,4 +1,4 @@
-// Elements
+// Variables for the DOM elements
 const word_element = document.getElementById("word");
 const text_element = document.getElementById("text");
 const score_element = document.getElementById("score");
@@ -8,7 +8,7 @@ const settingsBtn = document.getElementById("settings-btn");
 const settings = document.getElementById("settings");
 const selectDifficulty = document.getElementById("difficulty");
 
-// Arrays
+// Array
 const words = [
   "dependent", "dog", "superficial", "admit", "juice", "javascript",
   "developer", "airplane", "great", "fun", "manipulate", "cat",
@@ -60,7 +60,7 @@ function startCountdown() {
 // Reset the game timer and variables
 function resetGameTimer() {
   clearInterval(timeInterval); // Stop the ongoing countdown, if there is one running
-  time = difficulty === "hard" ? 50 : difficulty === "medium" ? 70 : 100; // Set time left based on difficulty
+  time = difficulty === "hard" ? 10 : difficulty === "medium" ? 20 : 30; // Set time left based on difficulty
   time_element.innerText = time + "s";
   countdownStarted = false; // Reset the countdown timer
 }
@@ -79,11 +79,10 @@ function updateTime() {
 
 // Game over, shows end screen
 function gameOver() {
-  endGameContainer.innerHTML = `
-    <h1>Time's up!</h1>
+  endGameContainer.innerHTML = 
+  `<h1>Time's up!</h1>
     <p>Your final score is ${score}</p>
-    <button onclick="location.reload()">Reload</button>
-  `;
+    <button onclick="location.reload()">Reload</button>`;
   endGameContainer.style.display = "flex";
 }
 
@@ -103,11 +102,11 @@ text_element.addEventListener("input", (e) => {
 
     // Adds time based on difficulty
     if (difficulty === "hard") {
-      time += 3;
+      time += 2;
     } else if (difficulty === "medium") {
-      time += 5;
+      time += 3;
     } else {
-      time += 10;
+      time += 5;
     }
     updateTime(); // Updates time display every time the user enters the word correctly
   }
