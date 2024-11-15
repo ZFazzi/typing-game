@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fefefe;
+  background-color: #acdbbc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,10 @@ body {
 button {
   cursor: pointer;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 7px;
   padding: 5px 15px;
+  background-color: #e3493bc9;
+  border-color: #e3493b5d;
 }
 
 select {
@@ -48,9 +50,9 @@ button:focus {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #6026ff;
+  background-color: #84c7a2e0;
   height: 70px;
-  color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +72,7 @@ button:focus {
 }
 
 .container {
-  background-color: #6026ff;
+  background-color: #84c7a2e0;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -82,19 +84,19 @@ button:focus {
 
 h2 {
   font-family: "Righteous", cursive;
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.305);
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 0 0 40px;
 }
 
 h1 {
   margin: 0;
-  padding: 10px;
-  color: #ffde17;
+  padding: 6px;
+  color: #e3493b;
 }
 
 input {
@@ -102,20 +104,20 @@ input {
   border-radius: 4px;
   font-size: 14px;
   width: 300px;
-  padding: 12px 20px;
-  margin-top: 7px;
+  padding: 12px 15px;
+  margin-top: 10px;
 }
 
 .score-container {
   position: absolute;
   top: 70px;
-  right: 20px;
+  right: 21px;
 }
 
 .time-container {
   position: absolute;
   top: 70px;
-  left: 20px;
+  left: 21px;
 }
 
 .end-game-container {
